@@ -4,6 +4,7 @@
 
 1. 下载chrome浏览器对应的[chromedriver](https://chromedriver.chromium.org/)，注意要下载和自己电脑中的chrome版本对应的[chromedriver](https://chromedriver.chromium.org/)版本;
 2. 修改程序中[chromedriver](https://chromedriver.chromium.org/)驱动的路径;
+3. 适用pip3安装selenium包，`pip3 install selenium`
 
 **二、运行**
 
@@ -13,6 +14,8 @@
 
 **三、注意事项**
 
+- 本程序基于python3实现，运行环境需要python3；
+
 - 人脸识别可以使用一些虚拟摄像软件解决;
-- 该脚本目前只对chrome浏览器适用，对于其他浏览器可以自行修改脚本实现(比葫芦画瓢)。
+- 该脚本目前只对chrome浏览器适用，对于其他浏览器可以自行修改脚本实现(比葫芦画瓢)；
 - 脚本运行期间最好不要手动操作界面！！！
