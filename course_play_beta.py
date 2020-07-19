@@ -158,8 +158,8 @@ def get_user_course_list(course_url, lesson_url_prefix):
 
 
 if __name__ == '__main__':
-    username = '410803199609030024'
-    password = '1122333.'
+    username = ''
+    password = ''
     while username == '':
         username = input("请输入您的用户名：")
         if username == '':
