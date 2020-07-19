@@ -249,7 +249,6 @@ class CoursePlay():
     # 播放每个章节视频
     def play_chapter(self, chapter_li):
         try:
-            # element_a = chapter_li.find_element_by_xpath('./div/a')
             # 获取当前li标签的a标签
             chapter_li.find_element_by_tag_name('a').click()
             time.sleep(1)
@@ -264,8 +263,8 @@ class CoursePlay():
 
 
 if __name__ == '__main__':
-    username = '110226198710183929'
-    password = 'Madein'
+    username = ''
+    password = ''
     while username == '':
         username = input("请输入您的用户名：")
         if username == '':
@@ -297,9 +296,8 @@ if __name__ == '__main__':
                             lambda d: d.find_element_by_xpath(f'//a[@class="{chapter}"]/ancestor::li'))
                         chapter = new_li
                     cp.play_chapter(chapter)
-            print("你已完成全部课程！！！")
-        else:
-            cp.driver.quit()
+        print("你已完成全部课程！！！")
+        cp.driver.quit()
     else:
         logger.error("登录失败！，请重新启动")
         cp.driver.quit()
